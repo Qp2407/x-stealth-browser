@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#0F172A"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+
+        <ImageView
+            android:id="@+id/app_logo"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="6dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/device_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:gravity="center_vertical"
+            android:background="#1E293B"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:layout_marginRight="6dp"
+            android:singleLine="true"
+            android:focusable="false"
+            android:clickable="true"
+            android:textColor="#38BDF8"
+            android:textSize="10sp"
+            android:text="● SM-S928B • Adreno 750 ↻" />
+
+        <TextView
+            android:id="@+id/url_bar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:clickable="false"
+            android:textColor="#94A3B8"
+            android:textSize="11sp"
+            android:text="https://x.com/login/signup" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+</LinearLayout>
